@@ -28,7 +28,7 @@ body {
 ========================= */
 
 .container {
-    width: 60%;
+    width: 100%;
     min-height: 100vh;
 
     background-color: #EFF2F7;
