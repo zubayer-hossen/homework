@@ -4,370 +4,88 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CSS Position & Flexbox Homework</title>
+    <title>MD Zubayer Hossen | Web Developer</title>
 
+    <link rel="stylesheet" href="./style.css">
 
- <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-
-
 
 <body>
 
+    <main class="container">
 
+        <div class="circle1"></div>
+        <div class="circle2"></div>
 
-    <nav class="navbar">
+        <div class="main_card_shape">
+            <div class="holder"></div>
 
-        <div class="nav-container">
+            <div class="profile_image">
 
-            <div class="logo">
-                ZUBAYER
-            </div>
-
-
-            <div class="nav-links">
-
-                <a href="#home">Home</a>
-
-                <a href="#skills">Skills</a>
-
-                <a href="#projects">Projects</a>
-
-                <a href="#position">Position</a>
+                <div class="online_icon">
+                    <div class="dot"></div>
+                    <div class="online">Online</div>
+                </div>
 
             </div>
+
+            <div class="name">
+                <h3>MD ZUBAYER HOSSEN</h3>
+                <p class="profession">Web Developer</p>
+            </div>
+
+            <div class="description">
+                Passionate about building simple and beautiful web experiences.
+                Always excited to learn new things!
+            </div>
+
+            <hr class="divider">
+
+            <div class="social_links">
+
+                <ul>
+
+                    <li>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:example@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <button class="button">
+                View Profile
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
 
         </div>
 
-    </nav>
-
-
-
-
-
-    <div class="hero" id="home">
-
-
-        <div class="hero-content">
-
-            <h1>Hello, I'm Zubayer</h1>
-
-            <p>
-                I am learning Web Development and currently
-                practicing HTML and CSS. This webpage is created
-                to demonstrate CSS Position, Flexbox, Margin
-                and Padding.
-            </p>
-
-
- 
-
-            <div class="static-example">
-
-                <strong>Position: Static</strong>
-
-                <br>
-
-                This element uses the default position.
-
-            </div>
-
-
-        
-
-            <div class="relative-example">
-
-                <strong>Position: Relative</strong>
-
-                <br>
-
-                This box is moved 20px from its original position.
-
-            </div>
-
-        </div>
-
-
-
-
-        <div class="hero-image">
-
-            <div class="small-circle"></div>
-
-
-            <img src="https://pbs.twimg.com/profile_images/1307212077887488001/3_ZSk9Zn_400x400.jpg" alt="Profile Image">
-
-
-
-
-            <div class="available-badge">
-
-                Available for Work
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-   
-    <div class="section" id="skills">
-
-        <h2 class="section-title">
-            My Skills
-        </h2>
-
-
-        <div class="skills-container">
-
-
-            <div class="skill-card">
-
-                <h3>HTML</h3>
-
-                <p>
-                    I use HTML to create the structure
-                    of a website.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>CSS</h3>
-
-                <p>
-                    I use CSS to design and style
-                    web pages.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>JavaScript</h3>
-
-                <p>
-                    I am learning JavaScript for
-                    interactive websites.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>React</h3>
-
-                <p>
-                    React is one of my future
-                    development goals.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    
-
-    <div class="section" id="projects">
-
-        <h2 class="section-title">
-            My Projects
-        </h2>
-
-
-        <div class="projects">
-
-
-            <div class="project-card">
-
-                <h3>Personal Portfolio</h3>
-
-                <p>
-                    A personal portfolio website where
-                    I can showcase my skills, projects
-                    and experience.
-                </p>
-
-                <a href="#" class="project-button">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>Hostel Management</h3>
-
-                <p>
-                    A digital hostel management system
-                    with administration and management
-                    features.
-                </p>
-
-                <a href="#" class="project-button">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>Quiz Application</h3>
-
-                <p>
-                    A simple quiz application for
-                    practicing questions and answers.
-                </p>
-
-                <a href="#" class="project-button">
-                    View Project
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-    <div class="section">
-
-        <h2 class="section-title">
-            Margin & Padding
-        </h2>
-
-
-        <div class="spacing-demo">
-
-
-            <div class="margin-box">
-
-                <h3>Margin</h3>
-
-                <p>
-                    This box has
-                    <strong>30px margin</strong>.
-                </p>
-
-            </div>
-
-
-            <div class="padding-box">
-
-                <h3>Padding</h3>
-
-                <p>
-                    This box has
-                    <strong>40px padding</strong>.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-    <div class="section" id="position">
-
-        <h2 class="section-title">
-            CSS Position & Z-Index
-        </h2>
-
-
-        <p>
-            CSS position property controls how an element
-            is placed on a webpage.
-        </p>
-
-
-        <ul>
-
-            <li>Static - Default position</li>
-
-            <li>Relative - Positioned relative to itself</li>
-
-            <li>Absolute - Positioned relative to nearest positioned parent</li>
-
-            <li>Fixed - Positioned relative to the browser window</li>
-
-            <li>Sticky - Stays in a position while scrolling</li>
-
-        </ul>
-
-
-        <h3>
-            Z-Index Example
-        </h3>
-
-
-        <div class="z-index-demo">
-
-            <div class="box-one">
-                Z-Index 1
-            </div>
-
-
-            <div class="box-two">
-                Z-Index 2
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- ==================================================
-         FIXED BUTTON
-    ================================================== -->
-
-    <div class="fixed-button">
-
-        ↑
-
-    </div>
-
-
-
-
-    <footer>
-
-        <h3>
-            CSS Homework
-        </h3>
-
-        <p>
-            Practicing Position ==> Flexbox ==> Margin ==> Padding
-        </p>
-
-        <p>
-            Made with HTML & CSS
-        </p>
-
-    </footer>
-
+    </main>
 
 </body>
 
