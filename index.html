@@ -1,91 +1,288 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>MD Zubayer Hossen | Web Developer</title>
-
-    <link rel="stylesheet" href="./style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>CSS Grid Complete Demo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="container">
+    <header>
+        <h1>CSS Grid Playground</h1>
+        <p>Learning CSS Grid from Basics to Advanced</p>
+    </header>
 
-        <div class="circle1"></div>
-        <div class="circle2"></div>
+    <main>
 
-        <div class="main_card_shape">
-            <div class="holder"></div>
+        <section>
+            <h2>01. Basic Grid & Columns</h2>
+            <p>display, grid-template-columns, gap</p>
+            <div class="grid basic">
+                <div>Box 1</div>
+                <div>Box 2</div>
+                <div>Box 3</div>
+                <div>Box 4</div>
+                <div>Box 5</div>
+                <div>Box 6</div>
+            </div>
+        </section>
 
-            <div class="profile_image">
+        <section>
+            <h2>02. Different Column Units</h2>
+            <p>px, %, fr, auto, repeat()</p>
+            <div class="grid units">
+                <div>100px</div>
+                <div>2fr</div>
+                <div>1fr</div>
+            </div>
+            <div class="grid percentages">
+                <div>25%</div>
+                <div>50%</div>
+                <div>25%</div>
+            </div>
+            <div class="grid auto-units">
+                <div>Auto</div>
+                <div>1fr</div>
+                <div>Auto</div>
+            </div>
+        </section>
 
-                <div class="online_icon">
-                    <div class="dot"></div>
-                    <div class="online">Online</div>
+        <section>
+            <h2>03. Grid Rows & Heights</h2>
+            <p>grid-template-rows, grid-auto-rows</p>
+            <div class="grid rows">
+                <div>Row 1</div>
+                <div>Row 1</div>
+                <div>Row 2</div>
+                <div>Row 2</div>
+                <div>Row 3</div>
+                <div>Row 3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>04. Column & Row Gaps</h2>
+            <p>gap, row-gap, column-gap</p>
+            <div class="grid different-gap">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>05. Grid Column & Row Span</h2>
+            <p>grid-column, grid-row, span</p>
+            <div class="grid placement">
+                <div class="wide">Column span 2</div>
+                <div>Box 2</div>
+                <div class="tall">Row span 2</div>
+                <div>Box 4</div>
+                <div>Box 5</div>
+                <div>Box 6</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>06. Exact Line Placement</h2>
+            <p>Start line / End line</p>
+            <div class="grid exact">
+                <div class="positioned">Column 1 to 3</div>
+                <div>Box 2</div>
+                <div>Box 3</div>
+                <div>Box 4</div>
+                <div>Box 5</div>
+                <div>Box 6</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>07. Named Grid Areas</h2>
+            <p>grid-template-areas, grid-area</p>
+            <div class="grid layout">
+                <div class="nav">NAV</div>
+                <div class="side">SIDEBAR</div>
+                <div class="content">MAIN CONTENT</div>
+                <div class="extra">EXTRA</div>
+                <div class="foot">FOOTER</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>08. Align Items & Justify Items</h2>
+            <p>stretch, start, end, center</p>
+            <div class="grid item-alignment">
+                <div>Start</div>
+                <div>Center</div>
+                <div>End</div>
+                <div>Stretch</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>09. Align Self & Justify Self</h2>
+            <p>Control an individual grid item</p>
+            <div class="grid self-alignment">
+                <div class="self-start">Start</div>
+                <div class="self-center">Center</div>
+                <div class="self-end">End</div>
+                <div class="self-stretch">Stretch</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>10. Place Items & Place Self</h2>
+            <p>Shorthand alignment properties</p>
+            <div class="grid place-items">
+                <div>Centered</div>
+                <div>Centered</div>
+                <div>Centered</div>
+                <div>Centered</div>
+            </div>
+            <div class="grid place-self">
+                <div class="self-combo">Place Self</div>
+                <div>Normal</div>
+                <div>Normal</div>
+                <div>Normal</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>11. Justify Content</h2>
+            <p>start, end, center, stretch, space-around,
+                space-between, space-evenly</p>
+            <div class="grid content-justify">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>12. Align Content</h2>
+            <p>Align the entire grid vertically</p>
+            <div class="grid content-align">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>13. Place Content</h2>
+            <p>place-content: align-content justify-content</p>
+            <div class="grid place-content">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>14. Implicit Grid & Auto Flow</h2>
+            <p>row, column, dense, row dense, column dense</p>
+            <div class="grid auto-flow">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>15. Auto Rows & Auto Columns</h2>
+            <p>min-content, max-content, minmax()</p>
+            <div class="grid automatic">
+                <div>Short</div>
+                <div>Automatic row sizing</div>
+                <div>Third item</div>
+                <div>Content decides the height</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>16. Repeat & Minmax</h2>
+            <p>repeat(), minmax(), auto-fill, auto-fit</p>
+            <div class="grid minmax-grid">
+                <div>Card 1</div>
+                <div>Card 2</div>
+                <div>Card 3</div>
+                <div>Card 4</div>
+                <div>Card 5</div>
+            </div>
+            <div class="grid autofill">
+                <div>Auto 1</div>
+                <div>Auto 2</div>
+                <div>Auto 3</div>
+            </div>
+            <div class="grid autofit">
+                <div>Fit 1</div>
+                <div>Fit 2</div>
+                <div>Fit 3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>17. Nested Grid</h2>
+            <p>A grid inside another grid</p>
+            <div class="grid nested">
+                <div>Parent 1</div>
+                <div class="grid inner">
+                    <div>Child 1</div>
+                    <div>Child 2</div>
+                    <div>Child 3</div>
+                    <div>Child 4</div>
                 </div>
-
+                <div>Parent 3</div>
             </div>
+        </section>
 
-            <div class="name">
-                <h3>MD ZUBAYER HOSSEN</h3>
-                <p class="profession">Web Developer</p>
+        <section>
+            <h2>18. Named Lines</h2>
+            <p>Custom names for grid lines</p>
+            <div class="grid named-lines">
+                <div class="named-item">Named line placement</div>
+                <div>Box 2</div>
+                <div>Box 3</div>
+                <div>Box 4</div>
+                <div>Box 5</div>
             </div>
+        </section>
 
-            <div class="description">
-                Passionate about building simple and beautiful web experiences.
-                Always excited to learn new things!
+        <section>
+            <h2>19. Subgrid</h2>
+            <p>Inherit parent grid tracks (where supported)</p>
+            <div class="grid subgrid-parent">
+                <div>Parent 1</div>
+                <div class="subgrid-child">
+                    <div>Subgrid 1</div>
+                    <div>Subgrid 2</div>
+                </div>
+                <div>Parent 3</div>
             </div>
-
-            <hr class="divider">
-
-            <div class="social_links">
-
-                <ul>
-
-                    <li>
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="mailto:example@gmail.com">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <button class="button">
-                View Profile
-                <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-
-        </div>
+        </section>
 
     </main>
+
+    <footer>
+        <p>CSS Grid Practice | Zubayer</p>
+    </footer>
 
 </body>
 

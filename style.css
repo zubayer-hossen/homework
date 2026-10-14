@@ -1,10 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Noto+Sans+Bengali:wght@100..900&family=Outfit:wght@100..900&display=swap');
-
-
-/* =========================
-   RESET
-========================= */
 
 * {
     margin: 0;
@@ -12,418 +6,587 @@
     box-sizing: border-box;
 }
 
-
-/* =========================
-   BODY
-========================= */
-
 body {
-    min-height: 100vh;
-    font-family: "Outfit", sans-serif;
-}
-
-
-/* =========================
-   MAIN CONTAINER
-========================= */
-
-.container {
-    width: 100%;
-    min-height: 100vh;
-
-    background-color: #EFF2F7;
-
-    position: relative;
-
-    overflow: hidden;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* =========================
-   BACKGROUND CIRCLE 1
-========================= */
-
-.circle1 {
-    height: 300px;
-    width: 300px;
-
-    background-color: #B0C1C0;
-
-    border-radius: 50%;
-
-    position: absolute;
-
-    top: -150px;
-    left: -150px;
-}
-
-
-/* =========================
-   BACKGROUND CIRCLE 2
-========================= */
-
-.circle2 {
-    height: 300px;
-    width: 300px;
-
-    background-color: #B0C1C0;
-
-    border-radius: 50%;
-
-    position: absolute;
-
-    bottom: -150px;
-    right: -150px;
-}
-
-
-/* =========================
-   MAIN CARD
-========================= */
-
-.main_card_shape {
-    width: 300px;
-    min-height: 450px;
-
-    padding: 25px 20px;
-
-    background-color: #FFFFFF;
-
-    position: relative;
-    z-index: 2;
-
-    border-radius: 25px;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* =========================
-   PROFILE IMAGE
-========================= */
-
-.holder {
-    height: 14px;
-    width: 80px;
-
-    background-color: #EFF2F7;
-
-    border-radius: 50px;
-
-    margin-bottom: 10px;
-
-    border: 1px solid #D5D9DE;
-
-    box-shadow:
-        inset 4px 4px 7px rgba(0, 0, 0, 0.18),
-        inset -4px -4px 7px rgba(255, 255, 255, 0.9),
-        0 1px 2px rgba(50, 50, 93, 0.15);
-
-    position: relative;
-}
-.profile_image {
-    height: 150px;
-    width: 150px;
-
-    flex-shrink: 0;
-
-    border: 5px solid #ECE6E6;
-
-    border-radius: 50%;
-    
-    margin-bottom: 15px;
-    
-    background-image: url("https://i.ibb.co.com/SwWN6Qb0/MD-ZUBAYER-HOSSEN.jpg");
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    
-    position: relative;
-
-    /*
-       IMPORTANT:
-       এটি profile image-এর ভিতরের
-       সব content গোল shape-এর মধ্যে রাখবে।
-    */
-    
-}
-
-
-/* =========================
-   ONLINE BADGE
-========================= */
-
-.online_icon {
-    height: 31px;
-    width: 81px;
-
-    border-radius: 50px;
-
-    background-color: #0DAB7B;
-
-    position: absolute;
-
-    bottom: 5px;
-    right: -13%;
-
-    border: 2px solid #ECE6E6;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 5px;
-}
-
-
-/* Online dot */
-
-.dot {
-    height: 10px;
-    width: 10px;
-
-    background-color: #FFFFFF;
-
-    border-radius: 50%;
-}
-
-
-/* Online text */
-
-.online {
-    color: #FFFFFF;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-
-/* =========================
-   NAME
-========================= */
-
-.name {
-    width: 100%;
-
-    text-align: center;
-}
-
-
-.name h3 {
-    font-family: "Outfit", sans-serif;
-
-    font-size: 20px;
-    font-weight: 700;
-
-    color: #202124;
-}
-
-
-.profession {
-    margin-top: 3px;
-
-    color: #7B7D84;
-
-    font-size: 14px;
-}
-
-
-/* =========================
-   DESCRIPTION
-========================= */
-
-.description {
-    width: 100%;
-
-    margin: 15px 0;
-
-    text-align: center;
-
-    font-family: "Outfit", sans-serif;
-
-    /* color: #555A61; */
-
-    font-size: 14px;
-
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
     line-height: 1.6;
 }
 
+header,
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
 
-/* =========================
-   DIVIDER
-========================= */
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
 
-.divider {
-    width: 100%;
+main {
+    width: min(1100px, 94%);
+    margin: 30px auto;
+}
 
-    border: none;
-    border-top: 1px solid #E5E7EB;
+section {
+    background: white;
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+    overflow: hidden;
+}
 
-    margin: 5px 0 15px;
+section h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+section p {
+    color: #64748b;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.grid>div {
+    background: #dbeafe;
+    border: 2px solid #60a5fa;
+    border-radius: 7px;
+    padding: 15px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.grid {
+    display: grid;
 }
 
 
-/* =========================
-   SOCIAL LINKS
-========================= */
+/* =====================================
+   2. BASIC GRID & COLUMNS
+===================================== */
 
-.social_links {
-    width: 100%;
+.basic {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
 }
 
+/* Alternative values:
+   grid-template-columns: 200px 200px 200px;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-columns: 30% 40% 30%;
+   grid-template-columns: auto 1fr auto;
+   grid-template-columns: repeat(3, 1fr);
+*/
 
-.social_links ul {
-    list-style: none;
 
-    display: flex;
+/* =====================================
+   3. DIFFERENT TRACK UNITS
+===================================== */
 
-    justify-content: center;
-    align-items: center;
+.units {
+    grid-template-columns: 100px 2fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+}
 
+.percentages {
+    grid-template-columns: 25% 50% 25%;
+    gap: 0;
+    margin-bottom: 15px;
+}
+
+.auto-units {
+    grid-template-columns: auto 1fr auto;
     gap: 10px;
 }
 
+/* Other sizing values:
+   min-content
+   max-content
+   minmax(150px, 1fr)
+   fit-content(200px)
+*/
 
-.social_links ul li {
-    height: 40px;
-    width: 40px;
 
-    border-radius: 50%;
+/* =====================================
+   4. GRID ROWS & HEIGHTS
+===================================== */
 
-    background-color: #B0C1C0;
+.rows {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px 100px 80px;
+    gap: 10px;
+}
 
-    display: flex;
-    justify-content: center;
+/* Alternative:
+   grid-template-rows: repeat(3, 100px);
+   grid-template-rows: auto 1fr auto;
+   grid-auto-rows: minmax(70px, auto);
+*/
+
+
+/* =====================================
+   5. GAP PROPERTIES
+===================================== */
+
+.different-gap {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    column-gap: 10px;
+}
+
+/* Shorthand:
+   gap: 20px;
+   gap: 10px 25px;  row-gap column-gap
+*/
+
+
+/* =====================================
+   6. COLUMN & ROW SPAN
+===================================== */
+
+.placement {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 75px;
+    gap: 10px;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+/* Also:
+   grid-column: 1 / 3;
+   grid-row: 1 / 3;
+   grid-column: 1 / -1;
+*/
+
+
+/* =====================================
+   7. EXACT LINE PLACEMENT
+===================================== */
+
+.exact {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 70px);
+    gap: 10px;
+}
+
+.positioned {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+/* grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 2;
+*/
+
+
+/* =====================================
+   8. GRID TEMPLATE AREAS
+===================================== */
+
+.layout {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 60px 150px 80px;
+    grid-template-areas:
+        "nav nav"
+        "side content"
+        "extra extra"
+        "foot foot";
+    gap: 10px;
+}
+
+.layout>div {
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.nav {
+    grid-area: nav;
+    background: #bfdbfe !important;
+}
+
+.side {
+    grid-area: side;
+    background: #fde68a !important;
+}
+
+.content {
+    grid-area: content;
+    background: #bbf7d0 !important;
+}
+
+.extra {
+    grid-area: extra;
+    background: #fbcfe8 !important;
+}
+
+.foot {
+    grid-area: foot;
+    background: #ddd6fe !important;
+}
+
+
+/* =====================================
+   9. JUSTIFY ITEMS & ALIGN ITEMS
+===================================== */
+
+.item-alignment {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 12px;
+
+    justify-items: center;
     align-items: center;
+}
 
-    transition: 0.3s ease;
+/* Try:
+   justify-items: start;
+   justify-items: end;
+   justify-items: stretch;
+
+   align-items: start;
+   align-items: end;
+   align-items: center;
+   align-items: stretch;
+
+   place-items: center;
+   place-items: start end;
+*/
+
+
+/* =====================================
+   10. JUSTIFY SELF & ALIGN SELF
+===================================== */
+
+.self-alignment {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 12px;
+}
+
+.self-start {
+    justify-self: start;
+    align-self: start;
+}
+
+.self-center {
+    justify-self: center;
+    align-self: center;
+}
+
+.self-end {
+    justify-self: end;
+    align-self: end;
+}
+
+.self-stretch {
+    justify-self: stretch;
+    align-self: stretch;
 }
 
 
-.social_links ul li a {
-    width: 100%;
-    height: 100%;
+/* =====================================
+   11. PLACE ITEMS & PLACE SELF
+===================================== */
 
-    text-decoration: none;
+.place-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
 
-    color: #FFFFFF;
+    place-items: center;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.place-self {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.self-combo {
+    place-self: center end;
+}
+
+/* place-items: align-items justify-items;
+   place-self: align-self justify-self;
+*/
+
+
+/* =====================================
+   12. JUSTIFY CONTENT
+===================================== */
+
+.content-justify {
+    grid-template-columns: repeat(3, 80px);
+    grid-auto-rows: 60px;
+    gap: 10px;
+
+    justify-content: space-evenly;
+}
+
+/* Try each:
+   start
+   end
+   center
+   stretch
+   space-around
+   space-between
+   space-evenly
+*/
+
+
+/* =====================================
+   13. ALIGN CONTENT
+===================================== */
+
+.content-align {
+    height: 280px;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 10px;
+
+    align-content: space-evenly;
+}
+
+/* Try:
+   start, end, center, stretch,
+   space-around, space-between, space-evenly
+*/
+
+
+/* =====================================
+   14. PLACE CONTENT
+===================================== */
+
+.place-content {
+    height: 250px;
+    grid-template-columns: repeat(3, 65px);
+    grid-template-rows: repeat(2, 45px);
+    gap: 10px;
+
+    place-content: center space-evenly;
+}
+
+/* First value: align-content
+   Second value: justify-content
+*/
+
+
+/* =====================================
+   15. GRID AUTO FLOW
+===================================== */
+
+.auto-flow {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 65px;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+/* Try:
+   grid-auto-flow: row;
+   grid-auto-flow: column;
+   grid-auto-flow: dense;
+   grid-auto-flow: row dense;
+   grid-auto-flow: column dense;
+*/
+
+
+/* =====================================
+   16. AUTO ROWS & AUTO COLUMNS
+===================================== */
+
+.automatic {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    gap: 10px;
+}
+
+/* Other values:
+   grid-auto-rows: auto;
+   grid-auto-rows: 100px;
+   grid-auto-rows: min-content;
+   grid-auto-rows: max-content;
+   grid-auto-columns: 150px;
+   grid-auto-columns: minmax(100px, auto);
+*/
+
+
+/* =====================================
+   17. REPEAT, MINMAX, AUTO-FILL & AUTO-FIT
+===================================== */
+
+.minmax-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.autofill,
+.autofit {
+    grid-template-columns: repeat(auto-fill,
+            minmax(130px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* For auto-fit, replace auto-fill:
+   repeat(auto-fit, minmax(130px, 1fr))
+*/
+
+
+/* =====================================
+   18. NESTED GRID
+===================================== */
+
+.nested {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 5px;
+    background: #bfdbfe;
+    border-radius: 7px;
+}
+
+.inner>div {
+    background: #93c5fd;
+    padding: 10px 3px;
 }
 
 
-/* =========================
-   SOCIAL HOVER
-========================= */
+/* =====================================
+   19. NAMED GRID LINES
+===================================== */
 
-.social_links ul li:hover {
-    background-color: #0DAB7B;
+.named-lines {
+    grid-template-columns:
+        [start] 1fr [middle] 1fr [end];
+    gap: 10px;
+}
 
-    transform: translateY(-4px);
+.named-item {
+    grid-column: start / end;
 }
 
 
-/* =========================
-   BUTTON
-========================= */
+/* =====================================
+   20. SUBGRID
+===================================== */
 
-.button {
-    height: 45px;
-    width: 100%;
+.subgrid-parent {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 
-    border-radius: 50px;
+.subgrid-child {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 10px;
+}
 
-    background-color: #0DAB7B;
-
-    border: 2px solid #ECE6E6;
-
-    margin-top: 18px;
-
-    color: #FFFFFF;
-
-    font-family: "Outfit", sans-serif;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 8px;
-
-    transition: 0.3s ease;
+.subgrid-child>div {
+    background: #c4b5fd;
+    border: 2px solid #8b5cf6;
+    padding: 12px 3px;
+    text-align: center;
+    border-radius: 7px;
 }
 
 
-/* =========================
-   BUTTON HOVER
-========================= */
+/* =====================================
+   21. RESPONSIVE GRID
+===================================== */
 
-.button:hover {
-    background-color: #098C65;
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 18px rgba(13, 171, 123, 0.25);
-}
-
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-
-@media (max-width: 400px) {
-
-    .main_card_shape {
-        width: calc(100% - 30px);
-
-        min-height: 440px;
-
-        padding: 25px 18px;
+@media (max-width: 700px) {
+    main {
+        width: 96%;
     }
 
-    .profile_image {
-        height: 140px;
-        width: 140px;
+    section {
+        padding: 15px;
     }
 
-    .name h3 {
+    .basic {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .units {
+        grid-template-columns: 80px 2fr 1fr;
+    }
+
+    .layout {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .content-justify {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    section h2 {
         font-size: 18px;
     }
 
-    .description {
-        font-size: 13px;
+    .basic,
+    .minmax-grid {
+        grid-template-columns: 1fr;
     }
 
-    .circle1,
-    .circle2 {
-        height: 230px;
-        width: 230px;
+    .units {
+        grid-template-columns: 1fr;
     }
 
-    .circle1 {
-        top: -115px;
-        left: -115px;
+    .percentages {
+        grid-template-columns: 1fr;
     }
 
-    .circle2 {
-        bottom: -115px;
-        right: -115px;
+    .auto-units {
+        grid-template-columns: 1fr;
+    }
+
+    .placement {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "side"
+            "content"
+            "extra"
+            "foot";
+    }
+
+    .content-justify {
+        grid-template-columns: repeat(3, 55px);
+    }
+
+    .named-lines {
+        grid-template-columns: 1fr 1fr;
     }
 }
-
